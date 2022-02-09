@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*Navbar style*/
+
+header {
+    width: 100%;
+    background-color: rgba(23, 65, 112, 0.5);
+    padding: 15px;
+    position: absolute;
+    top: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1500px;
+    margin: auto;
+}
+
+header a {
+    text-decoration: none;
+    margin: 100px;
+    color: rgb(194, 194, 194);
+    letter-spacing: 1px;
+}
+
+header h1 {
+    color: rgb(194, 194, 194);
+}
+
+/*Navbar style end*/
+/* ................ */
+/*Main contant left section style*/
+
+.banner-container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(8, 120, 165, 0.5),rgb(78, 181, 212)),url("./images/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.banner-container .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.left {
+    width: 700px;
+    align-self: flex-start;
+}
+
+.left h1{
+    padding: 0;
+    margin: 0;
+    font-size: 2.5rem;
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.left p {
+    font-size: 1.3rem;
+    margin-top: 30px;
+    line-height: 35px;
+    color: rgb(195, 194, 194);
+}
+
+.left button {
+    color: rgb(0, 35, 124);
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 0;
+    padding: 15px 50px;
+    border-radius: 6px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.left button:hover {
+    background-color: rgb(226, 226, 226);
+    transition: 0.2s;
+}
+
+/*Main contant left section style End*/
+/* ....................... */
+/*Main contant Right section style*/
+
+.right {
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    padding: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 6px rgba(95, 95, 95, 0.8);
+}
+
+.right h4 {
+    font-size: 1.4rem;
+    width: 300px;
+    color: rgba(34, 58, 68, 0.5);
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.inp-group {
+    width: 300px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.inp-group label {
+    color: rgba(2, 53, 73, 0.5);
+    font-size: 0.8rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.inp-group input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-top: 5px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    color: rgb(125, 168, 218);
+    caret-color: brown;
+}
+
+.inp-group input:focus ~ label,
+.inp-group input:valid ~ label {
+    top: -10px;
+    left: 10px;
+    color: rgb(147, 197, 255);
+}
+.inp-group input:focus,
+.inp-group input:valid {
+    border-color: rgb(125, 207, 255);
+}
+
+.submit-section {
+    text-align: center;
+}
+
+.submit-section input{
+    width: 300px;
+    background-color: rgb(125, 207, 255);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.submit-section input:hover {
+    background-color: rgb(110, 184, 226);
+    transform: scale(1.01);
+}
+
+/*Main contant Right section style End*/
+/*..........................*/
+/*Content section style start*/
+
+.content-section {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+}
+
+.image-container {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease-in-out;
+}
+
+.card-container {
+    background-color: rgb(185, 233, 255);
+    border-radius: 6px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 10px 5px 26px rgb(207, 207, 207);
+}
+
+.image-container img:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/*Footer*/
+
+.footer-container {
+    text-align: center;
+    color: rgb(156, 156, 156);
+}
+
+.footer-container span {
+    color: rgb(70, 212, 255);
+    font-size: 18px;
+}
+
+.medias {
+    margin-top: 15px;
+    font-size: 25px;
+    opacity: 0.6;
+}
+
+.medias a {
+    margin: 10px;
+}
